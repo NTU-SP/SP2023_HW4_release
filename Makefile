@@ -1,5 +1,5 @@
 CC = gcc
-CFLAGS = -I ./ -pthread
+CFLAGS = -I ./ -pthread -std=c11 -O2
 FILE = my_pool.c
 OBJ = sample bench
 
@@ -12,3 +12,4 @@ all: $(OBJ)
 
 clean:
 	rm -f $(OBJ)
+
